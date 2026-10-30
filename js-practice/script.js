@@ -135,23 +135,68 @@ console.log(greet("Kevin"));*/
 
 
 
-let car = document.querySelector(".car");
-car.textContent = "Porsche gt3 RS 911";
+// let car = document.querySelector(".car");
+// car.textContent = "Porsche gt3 RS 911";
 
-let btn = document.querySelector("#btn");
-btn.addEventListener("click", function () {
+// let btn = document.querySelector("#btn");
+// btn.addEventListener("click", function () {
 
-  car.textContent = "You pressed";
+//   car.textContent = "You pressed";
 
-});
-
-
+// });
 
 
 
-let blueBtn = document.querySelector("#blue");
 
-blueBtn.addEventListener("click", function () {
 
-  document.body.style.backgroundColor = "blue";
-});
+// let blueBtn = document.querySelector("#blue");
+
+// blueBtn.addEventListener("click", function () {
+
+//   document.body.style.backgroundColor = "blue";
+// });
+
+
+
+
+
+// let menu = ["Cappuccino", "Cold Coffee", "Latte", "Espresso"];
+// console.log(menu[3]);
+// console.log(menu.length);
+
+// menu.push("Mocha");
+
+// console.log(menu);
+
+
+
+
+// let prices = [500, 120, 600, 798, 328];
+
+// console.log(prices[4]);
+// console.log(prices.length);
+
+// for (let i = 0; i < prices.length; i++) {
+//   console.log("₹" + prices[i]);
+// }
+
+
+
+// for (let i = 0; i < menu.length; i++) {
+
+//   console.log(menu[i]);
+// }
+
+
+
+let list = document.querySelector("#list");
+let drinks = ["Cranberry blue", "Ice latte", "Orange Crusher", "Red garden"];
+let rates= [599, 699, 399, 789];
+
+for (let i = 0; i < drinks.length; i++) {
+
+  let item = document.createElement("p");
+  item.textContent = drinks[i] + " - ₹ " + rates[i];
+  list.appendChild(item);
+}
+

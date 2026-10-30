@@ -13,6 +13,16 @@ orderBtn.addEventListener("click", function ()  {
 });
 
 
+
+let list = document.querySelector("#list");
+let drinks = ["Latte", "Mocha", "Espresso"];
+
+for (let i = 0; i < drinks.length; i++) {
+    let item = document.createElement("p");
+    item.textContent = drinks[i];
+    list.appendChild(item);
+}
+
 // setTimeout(function () {
 
 //     orderMsg.classList.add("hide");
