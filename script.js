@@ -23,6 +23,8 @@ for (let i = 0; i < drinks.length; i++) {
     list.appendChild(item);
 }
 
+
+
 // setTimeout(function () {
 
 //     orderMsg.classList.add("hide");

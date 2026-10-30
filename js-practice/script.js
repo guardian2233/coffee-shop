@@ -189,14 +189,32 @@ console.log(greet("Kevin"));*/
 
 
 
-let list = document.querySelector("#list");
-let drinks = ["Cranberry blue", "Ice latte", "Orange Crusher", "Red garden"];
-let rates= [599, 699, 399, 789];
+// let list = document.querySelector("#list");
+// let drinks = ["Cranberry blue", "Ice latte", "Orange Crusher", "Red garden"];
+// let rates= [599, 699, 399, 789];
 
-for (let i = 0; i < drinks.length; i++) {
+// for (let i = 0; i < drinks.length; i++) {
 
-  let item = document.createElement("p");
-  item.textContent = drinks[i] + " - ₹ " + rates[i];
-  list.appendChild(item);
+//   let item = document.createElement("p");
+//   item.textContent = drinks[i] + " - ₹ " + rates[i];
+//   list.appendChild(item);
+// }
+
+
+
+// let drink = {name: "Latte", price: 180};
+// console.log(drink.name); 
+// console.log(drink.price);
+
+
+
+let menu = [
+  {name: "Latte", price: 180},
+  {name: "Mocha", price: 220},
+  {name: "Cold Coffee", price: 999},
+  {name: "Ice cream espresso", price: 899}
+];
+
+for (let i = 0; i < menu.length; i++) {
+  console.log(menu[i].name + " - ₹ " + menu[i].price);
 }
-
