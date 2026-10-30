@@ -119,3 +119,18 @@ footer {
 #contact a:hover {
   color: #3b2a1a;
 }
+
+
+
+
+
+#order-msg {
+
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+#order-msg.hide {
+
+  opacity: 0;
+}
